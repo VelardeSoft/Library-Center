@@ -1,37 +1,32 @@
 <script>
 import { defineComponent } from 'vue';
 export default defineComponent({
-  name: 'AppHeader',
+  name: 'TheFooter',
 });
 </script>
 
 <template>
-  <header class="theheader">
-    <img src="../assets/LogoUPC.png" alt="Logo" class="logo" />
-    <p>Library Center</p>
-  </header>
+  <footer class="thefooter">
+    <p>Library Center © 2024</p>
+  </footer>
 </template>
 
 <style>
-.theheader {
+.thefooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   background-color: #4a7ad2;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 100%;
   position: fixed;
   z-index: 1000;
 }
-.logo {
-  height: 45px;
-  margin-left: 40px;
-}
 p {
-  font-size: 20px;
-  margin-right: 80px;
   color: white;
+  font-size: 15px;
+  margin-left: 600px;
 }
 </style>
